@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Thayssa Godoi - Horas</title>
+    <meta charset="utf=8">
+    <link rel="shortcut icon" href="Martz90-Circle-Calculator.ico" type="image/x-icon">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+<header id="principal"> 
+    <h1>TecVida</h1>
+</header>
+
+<section class="subtitulo">
+    <h3>Calcule Seu Salário</h3>
+</section>
+    <main class="conteudo-principal">
+      <section class="secao secao-hora">
+        <article class="secao__conteudo">
+          <div class="secao__formulario">
+            <fieldset>
+              <legend>Quanto você ganha por mês?</legend>
+              <div class="secao__formulario__grupo">
+                <label for="ganho-mes">Quantidade por mês</label>
+                <input id="ganho-mes" type="number" value="0" />
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Quantas horas você trabalha por dia?</legend>
+              <div class="secao__formulario__grupo">
+                <label for="horas-dia">Horas por dia</label>
+                <input id="horas-dia" type="number" value="0" />
+              </div>
+            </fieldset>
+            <button type="button" class="btn-primary" onclick="calcularValorHora()">Calcular</button>
+          </div>
+        </article>
+        <footer class="secao__rodape">
+          <h3>
+            <span id="resposta">R$ 0,00</span><small>/hora</small>
+          </h3>
+          <p>Seu valor por hora</p>
+        </footer>
+      </section>
+    </main>
+
+    <script type="text/Javascript" src="javascript.js"></script>
+  </body>
+</html>

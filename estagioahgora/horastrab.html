@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Thayssa Godoi - Horas</title>
+    <meta charset="utf=8">
+    <link rel="shortcut icon" href="Martz90-Circle-Calculator.ico" type="image/x-icon">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/Javascript" src="javascript.js"></script>
+
+<header id="principal"> 
+    <h1>TecVida</h1>
+</header>
+
+<section class="subtitulo">
+    <h3>Calcule Seu Tempo de Trabalho</h3>
+</section>
+
+<form id="worked-hours">
+    
+    <div class="row mb-3">
+      
+      <div class="text-col">
+        <label for="entry-time" class="col-sm-2 col-form-label"><span>Horário de entrada</span></label>
+      </div>
+      
+      <div class="col-sm-10">
+        <input type="time" class="form-control" id="entry_time" onchange="WorkedTime(this.value)">
+      </div>
+    
+    </div>
+    
+    <div class="row mb-3">
+      
+      <div class="text-col">
+        <label for="leaving_time" class="col-sm-2 col-form-label"><span>Horário de saída</span></label>
+      </div>
+
+      <div class="col-sm-10">
+        <input type="time" class="form-control" id="leaving_time" onchange="WorkedTime(this.value)">
+      </div>
+    
+    </div>
+
+    <div class="row mb-3">
+      
+        <div class="text-col">
+          <label for="entry-time" class="col-sm-2 col-form-label"><span>Intervalo</span></label>
+        </div>
+        
+        <div class="col-sm-10">
+          <input type="time" class="form-control" id="break_time" onchange="WorkedTime(this.value)">
+        </div>    
+
+    </div>
+    
+    <div class="display">      
+      <div class="result-text"><span class="result-text-span">Tempo trabalhado</span></div>
+      <div id="result" class="result">00:00</div>
+    </div>
+
+  </form> 
+</head>
+</html>
